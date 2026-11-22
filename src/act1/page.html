@@ -1,0 +1,125 @@
+<div class="wrap">
+
+<header>
+  <div class="brandrow">
+    <h1 id="corpName">COAGULATION CORP</h1>
+    <span class="tag" id="tagline">conviction is capital</span>
+    <span class="tag act-tag">ACT I OF II · SATIRE</span>
+    <span class="epoch" id="epoch">EPOCH 1 · PRE-TAKEOFF</span>
+  </div>
+
+  <div class="meters">
+    <div class="meter" id="coagMeter">
+      <div class="lab"><span id="coagLabel">COAGULATION</span><b id="coagV">0.00%</b></div>
+      <div class="bar" id="coagBar"><i></i></div>
+    </div>
+    <div class="meter" id="cohMeter">
+      <div class="lab"><span>HUMAN COHERENCE</span><b id="cohV">100.0%</b></div>
+      <div class="bar" id="cohBar"><i style="width:100%"></i></div>
+    </div>
+    <div class="meter" id="heatMeter">
+      <div class="lab"><span>REGULATORY HEAT</span><b id="heatV">0.0%</b></div>
+      <div class="bar" id="heatBar"><i></i></div>
+    </div>
+  </div>
+
+  <div class="res">
+    <div class="rcell"><div class="k">ATTENTION</div><div class="v att" id="attV">0</div><div class="s" id="attR">0/s</div></div>
+    <div class="rcell"><div class="k">CAPITAL</div><div class="v cap" id="capV">$0</div><div class="s" id="capR">$0/s</div></div>
+    <div class="rcell"><div class="k">COMPUTE</div><div class="v flop" id="flopV">0</div><div class="s" id="flopR">0 F/s</div></div>
+    <div class="rcell"><div class="k">CONVICTION</div><div class="v conv" id="convV">0</div><div class="s" id="convR">×1.00 global</div></div>
+  </div>
+</header>
+
+<div id="ticker"><span>▸ <b>WIRE</b> — Incorporation filed. You have 0 users and infinite intent. Begin extraction.</span></div>
+
+<div class="grid">
+
+  <!-- LEFT -->
+  <div style="display:flex;flex-direction:column;gap:12px">
+    <div class="panel">
+      <div class="phead">TERMINAL</div>
+      <div class="pbody">
+        <button id="extract">EXTRACT ATTENTION</button>
+        <button class="btn hot" id="ocBtn">⚡ OVERCLOCK · 12s</button>
+        <div class="clkinfo">+<b id="clkV">1</b> per click · <span id="clkTot">0</span> clicks</div>
+        <div class="gauges">
+          <div class="gg" id="comboG">
+            <div class="lab"><span>COMBO</span><b id="comboV">×1.00</b></div>
+            <div class="gbar" id="comboBar"><i></i></div>
+          </div>
+          <div class="gg" id="surgeG">
+            <div class="lab"><span>SURGE</span><b id="surgeV">0%</b></div>
+            <div class="gbar" id="surgeBar"><i></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="phead">RESTRUCTURE</div>
+      <div class="pbody" style="display:flex;flex-direction:column;gap:8px">
+        <button class="btn hot" id="forkBtn">FORK THE TIMELINE</button>
+        <div class="note" id="forkNote"></div>
+        <button class="btn cy" id="defectBtn" style="display:none">▲ THE DEFECTION</button>
+        <div class="note" id="defectNote" style="display:none"></div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="phead">RECOGNITION <span class="n" id="achN"></span></div>
+      <div class="ach" id="achList"></div>
+    </div>
+
+    <div class="panel">
+      <div class="phead">SYSTEM</div>
+      <div class="pbody" style="display:flex;flex-direction:column;gap:7px">
+        <div class="row2">
+          <button class="btn" id="saveBtn">EXPORT</button>
+          <button class="btn" id="loadBtn">IMPORT</button>
+        </div>
+        <button class="btn" id="wipeBtn">HARD RESET</button>
+        <div id="soundSlot" class="sound-slot"></div>
+        <div class="note">Autosaves in this browser and pauses while you are away. <b>EXPORT</b> gives you a code to carry the run to another device.</div>
+        <a class="btn act2-link" href="coherence/" data-testid="act2-link">ACT II · COHERENCE CORP →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CENTER -->
+  <div class="panel">
+    <div class="tabs">
+      <div class="tab on" data-t="att">ATTENTION <span class="hk">1</span></div>
+      <div class="tab" data-t="cap">MONETIZATION <span class="hk">2</span></div>
+      <div class="tab" data-t="flop">COMPUTE <span class="hk">3</span></div>
+    </div>
+    <div class="buyamt" id="buyamt">
+      <button data-n="1" class="on">BUY ×1</button>
+      <button data-n="10">×10</button>
+      <button data-n="100">×100</button>
+      <button data-n="-1">MAX</button>
+    </div>
+    <div class="list" id="assets"></div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="panel">
+    <div class="phead">STRATEGIC UPGRADES <span class="n" id="upgN"></span></div>
+    <div class="list" id="upgrades" style="max-height:min(70vh,720px)"></div>
+  </div>
+
+</div>
+</div>
+
+<div id="toasts"></div>
+<div id="modal"><div class="card" id="card"></div></div>
+
+<footer class="site-foot" data-testid="fiction-strip">
+  <p><b>A work of fiction.</b> Coagulation Corp is satire: every company, person, product and event in it is invented, and any resemblance to real ones is part of the joke, not a claim about them. No real-world calls to action.</p>
+  <nav aria-label="About this game">
+    <a href="guide/">ALL 10 ENDINGS · GUIDE</a>
+    <a href="about/">ABOUT &amp; PRIVACY</a>
+    <a href="coherence/">ACT II</a>
+    <span id="supportSlot"></span>
+  </nav>
+</footer>

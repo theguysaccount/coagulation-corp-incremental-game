@@ -1,0 +1,84 @@
+<header>
+  <div class="wrap">
+    <div class="topbar">
+      <a class="logo" href="../" title="Back to Act I"><b>COHERENCE CORP</b><s>vs</s><i>COAGULATION CORP</i></a>
+      <span class="runtag" id="runtag"></span>
+      <span class="spacer"></span>
+      <span class="clock" id="clock">00:00</span>
+      <button class="iconbtn" id="btnPause" title="Pause (P)">⏸</button>
+      <button class="iconbtn" id="btnHelp" title="Briefing">?</button>
+      <button class="iconbtn" id="btnSave" title="Export / import save">⇅</button>
+    </div>
+    <div class="race">
+      <div class="rrow them">
+        <span class="rlabel">COAGULATION</span>
+        <div class="track"><i id="eBar"></i><span id="eTxt"></span></div>
+        <span class="rpct c-bad" id="ePct">0%</span>
+        <span class="rmeta" id="eEta"></span>
+      </div>
+      <div class="rrow you">
+        <span class="rlabel">COHERENCE</span>
+        <div class="track"><i id="yBar"></i><span id="yTxt"></span></div>
+        <span class="rpct c-coh" id="yPct">0%</span>
+        <span class="rmeta" id="yEta"></span>
+      </div>
+      <div class="objective" id="objective"></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="rail" id="rail"></div>
+
+  <div class="grid">
+    <div class="side">
+      <div class="card">
+        <div class="ch">Act</div>
+        <div class="cb">
+          <button class="bigbtn" id="btnClick">
+            SHARE THE MEME<small id="clickSub"></small>
+            <span class="floaters" id="floaters"></span>
+          </button>
+          <button class="act" id="btnRaise">
+            <span class="t"><span class="n">RAISE ON THE CURVE</span><span class="c c-cap" id="raiseVal"></span></span>
+            <span class="s" id="raiseSub"></span>
+            <span class="fill" id="raiseFill"></span>
+          </button>
+          <button class="act" id="btnPublish">
+            <span class="t"><span class="n">PUBLISH THE THESIS</span><span class="c c-cv" id="pubVal"></span></span>
+            <span class="s" id="pubSub"></span>
+            <span class="fill" id="pubFill"></span>
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="ch">Conditions</div>
+        <div class="fxwrap" id="fx"></div>
+      </div>
+      <div class="card">
+        <div class="ch">Field log</div>
+        <div class="logbox" id="log"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="tabs" id="tabs"></div>
+      <div class="panelwrap" id="panels"></div>
+    </div>
+  </div>
+</div>
+
+<div class="toasts" id="toasts"></div>
+<div id="modalRoot"></div>
+
+<footer class="site-foot" data-testid="fiction-strip">
+  <div class="wrap">
+    <p><b>A work of fiction.</b> Act II of Coagulation Corp. Satire: every company, person, product and event in it is invented, and any resemblance to real ones is part of the joke, not a claim about them. No real-world calls to action.</p>
+    <nav aria-label="About this game">
+      <a href="../">ACT I</a>
+      <a href="../guide/">ALL 10 ENDINGS · GUIDE</a>
+      <a href="../about/">ABOUT &amp; PRIVACY</a>
+      <span id="supportSlot"></span>
+    </nav>
+  </div>
+</footer>

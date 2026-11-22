@@ -1,0 +1,44 @@
+/* Coagulation Corp reading pages (guide, about). */
+:root{--bg:#08080b;--panel:#101016;--line:#24242f;--txt:#d6d6e0;--mut:#9a9ab0;--dim:#5a5a6c;--amber:#f0a83c;--red:#e8503f;--cyan:#3ad8cc;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,system-ui,sans-serif}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;background:radial-gradient(ellipse 90% 50% at 50% -10%,rgba(240,168,60,.07),transparent 60%),var(--bg);color:var(--txt);font-family:var(--sans);line-height:1.6}
+a{color:var(--amber)}
+.doc-top{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px;
+  background:rgba(8,8,11,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);font-family:var(--mono)}
+.doc-brand{color:var(--amber);text-decoration:none;letter-spacing:.16em;font-weight:700;font-size:14px}
+.doc-brand span{color:var(--cyan)}
+.doc-top nav{display:flex;gap:14px;align-items:center;font-size:11px;letter-spacing:.1em}
+.doc-top nav a{color:var(--mut);text-decoration:none}
+.doc-top nav a:hover{color:var(--txt)}
+.doc-play{display:inline-block;padding:8px 12px;border:1px solid #5a3a1a;border-radius:7px;background:linear-gradient(180deg,#2a1a10,#1a1008);
+  color:var(--amber)!important;text-decoration:none;font-family:var(--mono);letter-spacing:.1em;font-size:11px}
+.doc-play.big{padding:12px 16px;font-size:12px;margin:8px 8px 0 0}
+.doc-play.alt{border-color:#1e4a45;background:linear-gradient(180deg,#0c2422,#0a1614);color:var(--cyan)!important}
+.doc{max-width:980px;margin:0 auto;padding:40px 18px 70px}
+.doc-label{font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--dim);margin:0 0 8px}
+.doc h1{font-family:var(--mono);color:var(--amber);letter-spacing:.04em;font-size:clamp(24px,4.4vw,40px);line-height:1.15;margin:0 0 16px;text-shadow:0 0 24px rgba(240,168,60,.25)}
+.doc h2{font-family:var(--mono);font-size:clamp(17px,2.4vw,22px);letter-spacing:.06em;margin:42px 0 12px;color:var(--txt);scroll-margin-top:70px}
+.doc h3{font-family:var(--mono);font-size:14px;letter-spacing:.08em;color:var(--mut);margin:24px 0 8px}
+.doc p,.doc li,.doc dd{color:#c0c0d0;font-size:15.5px}
+.doc .lede{font-size:17px;color:var(--txt)}
+.doc .note{border:1px solid var(--line);border-left:3px solid var(--amber);border-radius:7px;padding:10px 12px;background:var(--panel);font-size:14px}
+.doc ul{padding-left:22px}
+.doc li{margin-bottom:6px}
+.table{overflow-x:auto;border:1px solid var(--line);border-radius:9px;background:var(--panel);margin:0 0 16px}
+.table table{width:100%;min-width:620px;border-collapse:collapse;font-size:13px}
+.table th,.table td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.table thead th{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;color:var(--dim);font-weight:700;white-space:nowrap}
+.table tbody th{color:var(--txt);font-weight:600}
+.table td{color:#a8a8bc}
+.table tr.good th{color:var(--cyan)}
+.table tr.danger th{color:var(--red)}
+.faq>div{border-top:1px solid var(--line);padding:12px 0}
+.faq dt{font-family:var(--mono);font-weight:700;margin-bottom:4px}
+.faq dd{margin:0}
+.code{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px;overflow-x:auto;color:var(--mut);font-size:12px;white-space:pre-wrap;word-break:break-all}
+.doc-foot{border-top:1px solid var(--line);padding:18px;color:var(--dim);font-size:13px;max-width:980px;margin:0 auto}
+.doc-foot b{color:var(--mut)}
+@media(max-width:560px){.doc-top nav a:not(.doc-play){display:none}.doc{padding:28px 14px 56px}}
